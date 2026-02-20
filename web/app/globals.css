@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #0a0a0f;
+  --foreground: #e4e4ef;
+  --card: #12121a;
+  --card-border: #1e1e2e;
+  --muted: #6b7280;
+  --buy: #22c55e;
+  --sell: #ef4444;
+  --accent: #8b5cf6;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+@layer base {
+  * {
+    border-color: var(--card-border);
+  }
+}

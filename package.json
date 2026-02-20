@@ -1,0 +1,36 @@
+{
+  "name": "virtual-launch",
+  "version": "1.0.0",
+  "description": "Blockchain analytics for Virtuals Protocol tokens on Base",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/main.ts",
+    "start": "tsx src/main.ts",
+    "db:push": "drizzle-kit push",
+    "db:generate": "drizzle-kit generate",
+    "add-project": "tsx scripts/add-project.ts",
+    "verify-tax": "tsx scripts/verify-tax.ts",
+    "backfill-internal-trades": "tsx scripts/backfill-internal-trades.ts",
+    "rebuild-internal-trades": "tsx scripts/rebuild-internal-trades.ts",
+    "rebuild-tax-inflows": "tsx scripts/rebuild-tax-inflows.ts",
+    "model:train-threshold": "tsx scripts/train-threshold-model.ts",
+    "model:backtest-threshold": "tsx scripts/backtest-threshold-model.ts"
+  },
+  "dependencies": {
+    "@fastify/cors": "^10.0.0",
+    "@fastify/websocket": "^11.0.0",
+    "@libsql/client": "^0.17.0",
+    "dotenv": "^16.4.0",
+    "drizzle-orm": "^0.36.0",
+    "fastify": "^5.1.0",
+    "pino-pretty": "^13.1.3",
+    "undici": "^7.21.0",
+    "viem": "^2.21.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "drizzle-kit": "^0.30.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0"
+  }
+}

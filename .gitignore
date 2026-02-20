@@ -1,3 +1,15 @@
+# Data
+data/
+*.db
+*.db-wal
+*.db-shm
+
+# Env
+.env
+
+# Drizzle
+drizzle/
+
 # Logs
 logs
 *.log
